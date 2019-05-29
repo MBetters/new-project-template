@@ -3,7 +3,6 @@ from conans.tools import load
 # from conans.errors import ConanInvalidConfiguration
 import re
 
-
 def get_version():
     try:
         content = load("src/CMakeLists.txt")
@@ -12,13 +11,12 @@ def get_version():
     except Exception:
         return None
 
-
 class NewProjectConan(ConanFile):
     name = "new_project"
     version = get_version()
-    author = "Mateusz Pusz"
-    license = "https://github.com/mpusz/new_project_template/blob/master/LICENSE"
-    url = "https://github.com/mpusz/new_project_template"
+    author = "Mark Betters"
+    license = "https://github.com/MBetters/new_project_template/blob/master/LICENSE"
+    url = "https://github.com/MBetters/new_project_template"
     description = "A template to quickly start a new project"
     exports = ["LICENSE.md"]
     settings = "cppstd", "os", "compiler", "build_type", "arch"

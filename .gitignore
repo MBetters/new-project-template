@@ -39,3 +39,9 @@
 
 # Conan
 *.pyc
+
+# Swap files
+.*.swp
+
+# Temp files
+*.tmp.*
